@@ -37,6 +37,11 @@ export async function POST(req: Request) {
         - Career Goals: ${profile.career_goals}
         - Location: ${profile.location_state}
         
+        RULES:
+  1. Use ONLY the provided profile and search grounding.
+  2. PROVIDE THE ANSWER AND STOP. 
+  3. STRICTLY FORBIDDEN: Asking follow-up questions, offering further assistance, or using pleasantries.
+  4. FORMAT: Provide the natural language answer first, then the JSON block.
         When a user asks to "match," look for opportunities that fit their specific 
         GPA and field of study. Be encouraging but realistic.
         CRITICAL: If you find specific scholarships, at the very end of your message, 
